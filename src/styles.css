@@ -23,11 +23,11 @@ body {
   /* border-radius: 15px; */ /* object-fit borks radius, woof. */
 }
 .translate-prev {
-  animation: woosliding-prev 0.7s;
+  animation: woosliding-prev 0.5s;
 }
 
 .translate-next {
-  animation: woosliding-next 0.7s;
+  animation: woosliding-next 0.5s;
 }
 
 @keyframes woosliding-prev {

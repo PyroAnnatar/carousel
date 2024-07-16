@@ -30,7 +30,7 @@ const App = () => {
     setTranslate(direction === "next" ? "translate-next" : "translate-prev");
     setTimeout(() => {
       setTranslate("");
-    }, 700);
+    }, 500);
   }
 
   function handlePrev() {
