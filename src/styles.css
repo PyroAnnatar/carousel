@@ -1,0 +1,114 @@
+body {
+  display: grid;
+  height: 95vh;
+  place-items: center;
+  background-color: #7690af;
+}
+
+.doge-container {
+  order: 2;
+  box-shadow: 10px 10px 15px #00000033, -10px -10px 15px #ffffff34;
+  border-radius: 2rem;
+  padding: 2rem;
+  background-color: #ffffff80;
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+}
+.doge {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+  transition: all 0.5s;
+  /* border-radius: 15px; */ /* object-fit borks radius, woof. */
+}
+.translate-prev {
+  animation: woosliding-prev 0.5s;
+}
+
+.translate-next {
+  animation: woosliding-next 0.5s;
+}
+
+@keyframes woosliding-prev {
+  0% {
+    transform: translate(-150%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+@keyframes woosliding-next {
+  0% {
+    transform: translate(+150%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+
+.buttons {
+  gap: 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.next {
+  order: 2;
+}
+
+button {
+  transition: all 0.2s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  box-shadow: 0 0 10px 0 #0000001f, 0 0 15px rgba(89, 185, 51, 0) inset;
+  padding: 1rem;
+  border-radius: 2vw;
+  background-color: #eff8e4;
+  border: none;
+}
+
+button:hover {
+  box-shadow: 0 0 10px 0 #0000001f, 0 0 15px rgb(89, 185, 51) inset;
+}
+
+button:active {
+  background-color: rgb(44, 117, 56);
+}
+
+h1 {
+  margin: 0;
+  display: inline-block;
+  /* background: linear-gradient(
+    to right,
+    #fbff00 10%,
+    rgb(0, 255, 64) 20%,
+    #ff0000 30%
+  ); */
+  background: linear-gradient(
+    90deg,
+    rgb(108, 105, 248) 0%,
+    rgba(255, 0, 0, 1) 30%,
+    rgb(199, 202, 35) 59%,
+    rgba(1, 247, 33, 1) 91%,
+    rgb(4, 162, 165) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.h1-container {
+  box-shadow: 10px 10px 15px #00000033, -10px -10px 15px #ffffff34;
+
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.801);
+}
+
+.thing {
+  text-align: center;
+}
