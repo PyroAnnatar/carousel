@@ -23,15 +23,18 @@ body {
   /* border-radius: 15px; */ /* object-fit borks radius, woof. */
 }
 .translate-prev {
-  animation: woosliding-prev 0.5s;
+  animation: woosliding-prev 0.7s;
 }
 
 .translate-next {
-  animation: woosliding-next 0.5s;
+  animation: woosliding-next 0.7s;
 }
 
 @keyframes woosliding-prev {
   0% {
+    transform: translate(-150%);
+  }
+  33% {
     transform: translate(-150%);
   }
   100% {
@@ -40,6 +43,9 @@ body {
 }
 @keyframes woosliding-next {
   0% {
+    transform: translate(+150%);
+  }
+  33% {
     transform: translate(+150%);
   }
   100% {
